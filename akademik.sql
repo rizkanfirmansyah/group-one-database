@@ -56,14 +56,14 @@ CREATE TABLE IF NOT EXISTS `mahasiswa` (
   `nama` varchar(50) NOT NULL,
   `alamat` text NOT NULL,
   PRIMARY KEY (`npm`),
-  KEY `kd_mk` (`kd_mk`),
-  CONSTRAINT `kd_mk` FOREIGN KEY (`kd_mk`) REFERENCES `matakuliah` (`kd_mk`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+  KEY `kd_mk` (`kd_mk`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table akademik.mahasiswa: ~1 rows (approximately)
+-- Dumping data for table akademik.mahasiswa: ~0 rows (approximately)
 /*!40000 ALTER TABLE `mahasiswa` DISABLE KEYS */;
 INSERT INTO `mahasiswa` (`kd_mk`, `npm`, `nama`, `alamat`) VALUES
-	(1, '2142442', 'Muhammad Sumbul', 'Soreang');
+	(1, '2142442', 'Muhammad Sumbul', 'Soreang'),
+	(1, '62452', 'Ich bin selamat', 'Soreang');
 /*!40000 ALTER TABLE `mahasiswa` ENABLE KEYS */;
 
 -- Dumping structure for table akademik.matakuliah
@@ -72,14 +72,14 @@ CREATE TABLE IF NOT EXISTS `matakuliah` (
   `nama_mk` varchar(50) NOT NULL,
   `sks` varchar(50) NOT NULL,
   PRIMARY KEY (`kd_mk`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 -- Dumping data for table akademik.matakuliah: ~3 rows (approximately)
 /*!40000 ALTER TABLE `matakuliah` DISABLE KEYS */;
 INSERT INTO `matakuliah` (`kd_mk`, `nama_mk`, `sks`) VALUES
-	(1, '', '3'),
-	(2, '', '4'),
-	(3, '', '3');
+	(1, 'Distributted Computing', '3'),
+	(2, 'Practical Operating System', '4'),
+	(3, 'Database SQL', '3');
 /*!40000 ALTER TABLE `matakuliah` ENABLE KEYS */;
 
 -- Dumping structure for table akademik.nilai
