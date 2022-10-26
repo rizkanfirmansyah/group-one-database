@@ -11,6 +11,26 @@
 <section class="table">
   <div class="container">
     <div class="card">
+      <div class="card-header row">
+        <div class="col-xl-3">
+          <h3>Tabel Data Mahasiswa</h3>
+        </div>
+        <div class="col-xl-9 text-end">
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Input Data Mahasiswa
+            </a>
+            <button class="btn btn-secondary" type="button">
+              Cetak Data
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="card-body">
         <table class="table table-bordered table-striped">
           <thead>
